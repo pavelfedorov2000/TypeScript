@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es6",
+        "noEmitOnError": true, // не компилировать в js, если падают ошибки
+        "strictNullChecks": true, // по умолчанию false (т.е. такое же поведение undefined и null что и в js), если true то при попытке присвоить значение типа undefined или null переменной другого типа компилятор при компиляции выбросит ошибку
+        "removeComments": true,
+        "sourceMap": true,
+        "outFile": "app.js"
+    }/* ,
+    "files":[
+        "app.ts",
+        "interfaces.ts",
+        "classes.ts",
+    ] */
+    // Если секция "files" не указана в файле tsconfig.json, то компилятор по умолчанию включает все файлы TypeScript (файлы с расширением *.ts и *.tsx), которые находятся в каталоге и подкаталогах проекта. Если же указана секция "files", то используются только файлы из этой секции.
+}
